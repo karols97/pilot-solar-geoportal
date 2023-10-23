@@ -1,0 +1,115 @@
+<title>A web-based pilot solar roof cadastre</title>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="leaflet.css" />
+		<link rel="stylesheet" href="Leaflet.HtmlLegend-master\dist\L.Control.HtmlLegend.css" />
+		<link rel="stylesheet" href="styl_strona.css" />
+		<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+        <link rel="stylesheet" type="text/css" href="leaflet-sidebar-v2-master\css\leaflet-sidebar.css">
+        <script src="leaflet-sidebar-v2-master\js\leaflet-sidebar.js"></script>
+        <script src="SelectLayersControl-master\src\SelectLayers.js"></script>
+		<script src="Leaflet.HtmlLegend-master\dist\L.Control.HtmlLegend.js"></script>
+		<script src="Leaflet.MousePosition-master\src\L.Control.MousePosition.js"></script>
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
+		<link rel="shortcut icon" href="img/favicon.ico"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	</head>
+	
+	<body>
+
+    <header>
+		<meta charset="utf-8"/>
+		
+		<div class="text" display>
+			<h1>A web-based pilot solar roof cadastre</h1>
+		</div>
+		<a href="https://www.interreg-central.eu/Content.Node/TARGET-CE.html">
+			<img src="img/TARGET-CE_top.jpg" class="image">
+		</a>
+		
+    </header>
+
+    <div class="topnav">
+    	<b href="#news">Municipality</b>
+  		<a class="active" href="#home">Podgórzyn (Lower Silesia, Poland)</a>
+  		<a href="index_chrastava.html">Chrastava (Liberec Region, Czech Republic)</a>
+	</div>
+
+    <section>
+		<meta charset="utf-8"/>
+		<div class="container">
+        	<nav>
+				<div class="content c1">
+				<h4 style="text-align: center">Raster layers:</h4><br>
+				<h5 style="text-align: left">Total solar irradiation [kWh/m<sup>2</sup>/year]:</h5>
+				<img src="img/naslonecznienie_calkowite.PNG" class="img1" width="70%">	
+				<h4 style="text-align: center">
+				</div>
+			</nav>
+		</div>
+
+    <article>
+		
+        <div id = "map" style = "width:100%; height:100%;"></div>
+            <script type="text/javascript" src="podg_granica.js"></script>
+            <script type="text/javascript" src="bud_kat_2.js"></script>
+        <script type="text/javascript" src="mapa_strona.js"></script>
+        
+	</article>
+    
+
+
+		<div class="newspaper1">
+			<div class="container_down1">
+				<h3 style="text-align: left; margin-top: 5%; margin-right: 70%;">Solar Energy</h3>
+				<h6>Photovoltaics is a process that enables a direct conversion of light to electricity. It is one of the renewable energy resources. Because of it's specificity it can be considered a prosumer type of energy. It means the user of photovoltaic panels can be at the same time a producer, as well as, a consumer of the energy. Geographic Information Systems are often used for solar analyses, but also in order to extend and share the knowledge of solar energy through online solar cadastres. Solar cadastres are becoming more and more popular among local societies. They allow the residents and authorities to examine buildings suitable for solar energy production without specialistic tools or analyses. </h6>
+				<h6>This solar cadastre pilot contains many information regarding solar rooftops potential in two municipalities: Podgórzyn in Poland and Chrastava in Czech Republic. The solar attributes have been calculated in QGIS, an open GIS software. The solar attributes are: yearly mean solar irradiation, solar panels suitable area, possible energy yield for panels with various efficiency (19% and 16%), possible carbon dioxide reduction and a mean rooftop slope. The map also contains two raster layers: raster of total solar irradiation and a raster presenting the duration of direct of solar irradiation. Total solar irradiation is a sum of intensity of solar radiation which falls on specific area in kWh/m<sup>2</sup> per year. The duration raster shows how long does the sun fall on an area directly in hours per year.</h6>
+				<br>
+			</div>
+			<a href="https://www.podgorzyn.pl/">
+				<img src="img/podgorzyn_herb.png" class="image3">
+			</a>
+			<a href="https://umwd.dolnyslask.pl/">
+				<img src="img/dolny_slask.png" class="image3">
+			</a>
+			<a href="http://www.chrastava.cz/">
+				<img src="img/chrastava_herb.png" class="image3">
+			</a>	
+			<a href="https://www.kraj-lbc.cz/">	
+				<img src="img/liberecky_kraj.png" class="image3">
+			</a>
+		</div>
+		<div class="newspaper2">
+			<img src="img/Map3.png" class="image2">
+			<div class="container_down2">
+				<h3 style="text-align: left; margin-top: 7.5%; margin-right: 70%;">TARGET-CE</h3>
+				<h6 style="margin-left: 5%; margin-right: 5%;">The web-based solar cadastre site has been created as a part of TARGET-CE project. It’s goal is reduction of Energy use in public buildings without significant construction works. TARGET-CE collects, adjusts, and deploy new ICT tools, financial models, action plans and training to the local and regional administrations and integrate them into territorial and thematic strategies. The project aims to become an energy efficiency flagship in central European region, offering the solutions for public buildings on a unique web platform.</h6>
+				<br>
+			</div>
+		</div>
+
+	</section>
+
+	<br>
+	<br>
+	
+	<footer>
+        <a style="color:white" href="https://www.euwt-novum.eu/">The EUWT-NOVUM official site</a><br>
+        <a style="color: white" href="https://www.podgorzyn.pl/">Podgórzyn commune  official site</a><br>
+		<a style="color: white" href="http://www.chrastava.cz/">Town of Chrastava  official site</a><br>
+		<a style="color:white" href="https://ec.europa.eu/jrc/en/pvgis">Photovoltaic Geographical Information System</a><br><br>
+		<a style="font-size: 10px">&copy; TARGET-CE 2022</a>
+    </footer>
+
+	</body>
+</html>
+
